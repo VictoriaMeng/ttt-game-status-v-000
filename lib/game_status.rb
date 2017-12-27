@@ -35,6 +35,7 @@ def over?(board)
 end
 
 def winner(board)
+  return nil if draw?(board)
   combo = won?(board)
   index = combo[0]
   symbol = board[index]
