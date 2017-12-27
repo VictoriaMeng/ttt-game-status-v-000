@@ -36,7 +36,7 @@ end
 
 def winner(board)
   combo = won?(board)
-  index = combo[first]
+  index = combo[0]
   symbol = board[index]
   draw?(board) ? nil : symbol
 end
