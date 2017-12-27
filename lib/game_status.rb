@@ -35,5 +35,5 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).select { |index| board[index] }
+  won?(board).find { |index| board[index] }
 end
