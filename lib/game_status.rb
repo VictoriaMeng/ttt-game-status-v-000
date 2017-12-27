@@ -25,3 +25,6 @@ end
 def full?(board)
   board.none? { |index| index == " " }
 end
+
+def draw?(board)
+end
