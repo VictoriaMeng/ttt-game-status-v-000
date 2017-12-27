@@ -39,7 +39,7 @@ def winner(board)
     nil
   else
     combo = won?(board)
-    index = combo[0]
+    index = combo.first
     board[index]
   end
 end
