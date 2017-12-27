@@ -35,8 +35,11 @@ def over?(board)
 end
 
 def winner(board)
-  return nil if draw?(board)
-  combo = won?(board)
-  index = combo[0]
-  board[index]
+  if draw?(board)
+    nil
+  else
+    combo = won?(board)
+    index = combo[0]
+    board[index]
+  end
 end
