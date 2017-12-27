@@ -16,10 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
   WIN_COMBINATIONS.find do |combo|
     row = combo.map { |index| board[index] }
     row.count("X") == 3 || row.count("O") == 3
   end
+end
 
+def full?(board)
 end
