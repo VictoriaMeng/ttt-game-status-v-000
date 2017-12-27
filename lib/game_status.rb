@@ -36,6 +36,6 @@ end
 
 def winner(board)
   return nil if draw?(board)
-  combo = won?(board)
-  board[index]
+  won?(board).first == "X" ? "X" : "O"
+  
 end
