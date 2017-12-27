@@ -36,5 +36,5 @@ end
 
 def winner(board)
   combo = won?(board)
-  draw?(board) ? nil : board[combo.first]
+  draw?(board) ? nil : combo[0]
 end
